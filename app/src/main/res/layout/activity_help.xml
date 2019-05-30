@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ActivityHelp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nastroika" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="@string/helpwords"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/clicktuner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".33"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_mic_24dp"
+            android:onClick="ClickTuner1"
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".34"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_help_24dp"
+            />
+        <ImageButton
+            android:id="@+id/clickauthor2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_info_24dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="ClickAuthor2"
+            />
+    </LinearLayout>
+</LinearLayout>
